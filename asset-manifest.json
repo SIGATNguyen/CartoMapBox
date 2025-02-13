@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SIGATNguyen/CartoMapBox/static/css/main.f033cc64.css",
+    "main.js": "/SIGATNguyen/CartoMapBox/static/js/main.2836f93c.js",
+    "index.html": "/SIGATNguyen/CartoMapBox/index.html",
+    "main.f033cc64.css.map": "/SIGATNguyen/CartoMapBox/static/css/main.f033cc64.css.map",
+    "main.2836f93c.js.map": "/SIGATNguyen/CartoMapBox/static/js/main.2836f93c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f033cc64.css",
+    "static/js/main.2836f93c.js"
+  ]
+}
