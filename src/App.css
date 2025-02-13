@@ -1,0 +1,126 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* MAP CONTAINER */
+#map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* STORY CONTAINER */
+#story {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+/* HEADER */
+#header {
+  text-align: center;
+  padding: 2vh 2vw;
+}
+
+#header h1,
+#header h2,
+#header p {
+  margin-bottom: 1em;
+}
+
+/* FOOTER */
+#footer {
+  width: 100%;
+  min-height: 5vh;
+  padding: 2vh 2vw;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+/* CHAPTERS */
+#features {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* ALIGNEMENTS */
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.left {
+  width: 33vw;
+  margin-left: 5vw;
+}
+
+.right {
+  width: 33vw;
+  margin-left: 62vw;
+}
+
+.fully {
+  width: 100%;
+  margin: auto;
+}
+
+/* THEMES (dark / light) */
+.dark {
+  color: #fafafa;
+  background-color: #444;
+}
+
+.light {
+  color: #444;
+  background-color: #fafafa;
+}
+
+/* STEP (chapitre) */
+.step {
+  padding-bottom: 80vh;
+  opacity: 0.25;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.step.active {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* TEXT CONTAINER : conteneur de texte réduit avec fond sombre semi-transparent */
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+  .centered, .left, .right, .fully {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .text-container {
+    width: auto;
+    max-width: 90vw;
+  }
+}
+
+/* Fix pour le scroll sur mobile (Mapbox GL) */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+  touch-action: unset;
+}
